@@ -1,0 +1,3 @@
+using WebIO
+WebIO.install_jupyter_nbextension()
+WebIO.install_jupyter_labextension()

@@ -1,0 +1,16 @@
+name: JuPyBinders
+channels:
+  - conda-forge
+dependencies:
+  - numpy
+  - pandas
+  - matplotlib
+  - bokeh
+  - plotly
+  - folium
+  - youtube-dl
+  - ffmpeg
+  - nodejs
+  - pip
+  - pip:
+    - pyecharts

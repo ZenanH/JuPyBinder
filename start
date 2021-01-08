@@ -1,0 +1,4 @@
+#!/bin/bash
+export JULIA_NUM_THREADS=8
+export MAPBOX_API_KEY=pk.eyJ1IjoiZWxsaW90aHVvemVub24iLCJhIjoiY2tmeGt1cXp0MjB3NjJ6bXo4c2g0N21hdyJ9.Jpjq1eUnaOd44D57HB5kXA
+exec "$@"
