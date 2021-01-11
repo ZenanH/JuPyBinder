@@ -1,0 +1,36 @@
+name: "Launch-Server"
+
+on:
+   push:
+     branches: master
+   schedule:
+       - cron:  '0 0/12 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout files in repo
+        uses: actions/checkout@master
+
+      - name: update jupyter dependencies with repo2docker
+        uses: machine-learning-apps/repo2docker-action@master
+        with:
+          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+          MYBINDERORG_CACHE: true
+          
+  launch-server:
+    name: open-MyBinder-URL
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Display the path
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install w3m w3m-img
+          w3m https://mybinder.org/v2/gh/ZenanH/JuPyBinder/master?urlpath=lab
+          sleep 600
+        shell: bash
+
