@@ -4,7 +4,7 @@ Binder for Julia and Python
 
 ## Environment
 
-* Julia Language (v1.6.1)
+* Julia Language (v1.6.2)
 * Python
 
 ## Configration 
