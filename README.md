@@ -3,7 +3,6 @@
 Binder for Julia and Python 
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ZenanH/JuPyBinder/main?urlpath=lab)
-[![Launch-Server](https://github.com/ZenanH/JuPyBinder/actions/workflows/launch_server.yml/badge.svg)](https://github.com/ZenanH/JuPyBinder/actions/workflows/launch_server.yml)
 
 ## Environment
 
